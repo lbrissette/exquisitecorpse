@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exquisite Corpse Online!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@96.9,300..700&display=swap"
+    rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+</head>
+
+<body class = "drawing-body">
+    <img class="small-title" src="/assets/hack-title.png" alt="Exquistite Corpse">
+
+    <h1>Player 1, Start Drawing!</h1>
+
+    <h3>
+        <div><span id="time">00:00</span></div>
+    </h3>
+    <section class="container">
+        <div id="toolbar">
+            <h3></h3>
+            <label for="stroke">Stroke</label>
+            <input id="stroke" name='stroke' type="color">
+            <label for="lineWidth">Line Width</label>
+            <input id="lineWidth" name='lineWidth' type="number" value="5">
+            <button id="clear">Clear</button>
+        </div>
+        <div class="drawing-board">
+            <canvas id="drawing-board"></canvas>
+        </div>
+    </section>
+    <script src="js/drawinggame.js"></script>
+</body>
+
+<div id="myDIV">
+    This is my DIV element.
+  </div>
+
+</html>
