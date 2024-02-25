@@ -3,6 +3,7 @@
 #home-body {
   animation: move-down 1s;
   background-image: url("/assets/hack-bg.png");
+  background-color:#FFDD5F;
   background-position: center;
   background-size: 110%;
   background-repeat: no-repeat;
