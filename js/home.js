@@ -21,7 +21,7 @@ function checkOnlyOne(b){
   }
 }
 
-sessionStorage.setItem("mytime", 30); // default
+sessionStorage.setItem("mytime", 3); // default
 sessionStorage.setItem("mymode", false); // default
 
 function checkOnlyOneTime(b){

@@ -30,7 +30,13 @@ label {
   background-color:#FFDD5F;
 }
 
-img {
+.final-body {
+  background-image: url(/assets/final-bg.png);
+  background-position: center;
+  background-size: 100%;
+}
+
+.img-header {
   top: 0px;
   margin-top: 3em;
   padding-left: auto;
@@ -109,10 +115,11 @@ h3{
 }
 
 p {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   padding: 20px;
   margin: 0px;
+  font-family: "Fredoka", sans-serif;
 }
 
 .container {
@@ -195,8 +202,8 @@ p {
 .settings {
   visibility: hidden;
   background: white;
-  width: 75%;
-  height: 75%;
+  width: 40%;
+  height: 40%;
   color: black;
   position: absolute;
   top: 50%;
@@ -208,14 +215,12 @@ p {
   outline-color: #F9DE75;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
 }
 
 .open-settings {
   transition: transform 0.4s, top 0.4s;
   transform: translate(-50%, -50%);
   visibility: visible;
-  animation: scaleUp 1s;
 }
 
 .settings-header {
@@ -241,8 +246,8 @@ p {
 #btn-group span {
   display: inline-block;
   size: 40px;
-  width: 10%;
-  height: 10%;
+  width: 15%;
+  height: 20%;
   padding: 10px;
   text-transform: uppercase;
   border: 2px solid gold;
@@ -255,19 +260,22 @@ p {
   color: black;
 }
 
+
+
 .launch {
   display: inline-block;
-  size: 30px;
-  width: 10%;
-  height: 10%;
+  width: 20%;
+  height: 20%;
   padding: 10px;
   text-transform: uppercase;
   border: 2px solid gold;
   border-radius: 3px;
   color: gold;
   background-color: transparent;
+  margin-left: 15em;
 
 }
+
 .launch:hover {
   background-color: gold;
   color: black;
@@ -279,6 +287,16 @@ p {
   text-align: center;
   font-size: 100px;
   animation: scaleUp 1s;
+  line-height: 5px;
+}
+
+#filler {
+  height: 143px;
+}
+
+#btn-group input[type="checkbox"]:hover + span {
+  background-color: gold;
+  color: black;
 }
 
 @keyframes scaleUp {
@@ -293,22 +311,18 @@ p {
 }
 
 #drawing-space {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   animation: scaleUp 1s;
-  background-color: rgb(225, 221, 221);
+  background-color: rgb(255, 255, 255);
   border: solid;
   border-color: black;
   gap: 0px;
-  margin-left: 18em;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-left: 28em;
   margin-top: 2em;
 }
 

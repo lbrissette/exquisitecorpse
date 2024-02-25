@@ -7,7 +7,7 @@ const canvasOffsetX = canvas.offsetLeft;
 const canvasOffsetY = canvas.offsetTop;
  
 canvas.width = window.innerWidth * .75;
-canvas.height = window.innerHeight * .75;
+canvas.height = window.innerHeight * .55;
 // a comment!
 let isPainting = false;
 let lineWidth = 5;
@@ -101,18 +101,18 @@ function storeCanvas() {
 }
 
 window.onload = function () {
-    var thirtySec = 60 * 0.1;
-    display = document.querySelector('#time');
-    counter = counter + 1;
-    localStorage.setItem("counter", counter);
- 
-    startTimer(thirtySec, display);
-};
-
-window.onload = function () {
     display = document.querySelector('#time');
     counter = counter + 1;
     localStorage.setItem("counter", counter);
     startTimer(sessionStorage.getItem("mytime"), display);
+    if(Number(counter) == 1) {
+        document.getElementById("play").innerHTML = "<h1>Player 1, draw the head!</h1>";
+        }
+        else if(Number(counter) == 2) {
+        document.getElementById("play").innerHTML = "<h1>Player 2, draw the body!</h1>";
+        }
+        else {
+        document.getElementById("play").innerHTML = "<h1>Player 3, draw the legs!</h1>";
+        }
 };
 

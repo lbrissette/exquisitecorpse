@@ -16,10 +16,9 @@
 </head>
 
 <body id= "home-body">
-    <img src="assets/hack-title.png" alt="Exquistite Corpse">
+    <img class="img-header" src="assets/hack-title.png" alt="Exquistite Corpse">
     <h2 id="online">online!</h2>
-    <p>A collaborative drawing game where three people draw parts of a person</p>
-    <p>Take turns drawing the head, torso, and legs of a person!</p>
+    <p>A collaborative drawing game where three people draw parts of a creature</p>
 
     <div class="container">
         <div class="container">
@@ -35,10 +34,6 @@
             <input class="checkbox" type="checkbox" onclick="checkOnlyOneTime(this.value);" value="90"><span>90 SEC</span></label>
             <label>
             <input class="checkbox" type="checkbox" onclick="checkOnlyOneTime(this.value);" value="120"><span>120 SEC</span></label>
-            </p>
-            <p id="mode-group" >
-            <label><input id="mode" class="mode" type="checkbox" onclick="checkOnlyOneMode(this.value);" value=false><span>CLASSIC</span></label>
-            <label><input id="mode" class="mode" type="checkbox" onclick="checkOnlyOneMode(this.value);" value=true><span>INSPIRE</span></label>
             </p>
             <a href = "index.html">
             <button class="launch" onclick="closeSettings()" type = "button">Start!</button>
